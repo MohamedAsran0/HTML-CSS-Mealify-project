@@ -1,0 +1,338 @@
+/* Target mobile devices in portrait mode and up */
+@media screen and (min-width: 320px) {}
+
+
+
+
+
+
+
+
+
+
+
+/* Target mobile devices in landscape mode and up */
+@media screen and (min-width: 480px) {
+
+    /****************home section*******************/
+
+    .home-content-buttons {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* Target tablets in portrait mode and up */
+@media screen and (min-width: 600px) {}
+
+
+
+
+
+
+
+
+
+/* Target tablets in landscape mode and up */
+@media screen and (min-width: 768px) {
+
+    /****************home section*******************/
+
+    .fa-bars {
+        display: none;
+    }
+
+    .nav-bar-middle {
+        display: inline;
+    }
+
+    .nav-bar-middle ul li {
+        margin-left: 15px;
+    }
+
+    .home-content .container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .home-content-left {
+        text-align: left;
+    }
+
+    .home-content-buttons {
+        flex-direction: row;
+        gap: 15px;
+        justify-content: flex-start;
+        margin-top: 30px;
+    }
+
+    .home-section-book-table-button button {
+        border-top-left-radius: 0;
+        margin-top: 0;
+    }
+
+    /****************chef section*******************/
+    .chef-card {
+        width: 48%;
+    }
+
+    .chef-section-bottom {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /****************gallery section*******************/
+    .gallery-section-bottom {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        position: relative;
+    }
+
+    /****************contact section*******************/
+
+    /*///////////////// cards //////////////*/
+
+    .gallery-section-bottom .pizza {
+        grid-area: 1 / 1 / span 1 / span 1;
+    }
+
+    .gallery-section-bottom .beef {
+        grid-area: 1 / 2 / span 2 / span 1;
+    }
+
+    .gallery-section-bottom .burger {
+        grid-area: 2 / 1 / span 1 / span 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-2%);
+    }
+
+    .gallery-section-bottom .flying-pizza {
+        grid-area: 3 / 1 / span 2 / span 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-20%);
+    }
+
+    .gallery-section-bottom .chicken {
+        grid-area: 3 / 2 / span 1 / span 1;
+    }
+
+    .gallery-section-bottom .kebab {
+        grid-area: 4 / 2 / span 1 / span 1;
+    }
+
+    .gallery-section-bottom .frittata {
+        grid-area: 5 / 1 / span 1 / span 1;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    /*///////////////// cards end //////////////*/
+
+
+    .contact-section-cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 95%;
+    }
+
+    .contact-card {
+        width: 48%;
+    }
+
+    /****************footer section*******************/
+
+    .footer .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .footer-first-part {
+        width: 45%;
+    }
+
+    .footer-second-part {
+        width: 90%;
+        order: 3;
+    }
+
+    .footer-third-part {
+        width: 45%;
+    }
+
+    .footer-email {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+
+    .footer-email input {
+        width: 80%;
+    }
+
+    .footer-email button {
+        width: 20%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* Target the desktop view */
+@media screen and (min-width: 1024px) {
+
+    /****************chef section*******************/
+    .chef-card {
+        width: 30%;
+
+    }
+
+    .chef-section-bottom {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .gallery-section-bottom {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        position: relative;
+    }
+
+    /*///////////////// cards //////////////*/
+
+    .gallery-section-bottom .pizza {
+        grid-area: 1 / 1 / span 1 / span 1;
+    }
+
+    .gallery-section-bottom .beef {
+        grid-area: 1 / 2 / span 2 / span 1;
+    }
+
+    .gallery-section-bottom .burger {
+        grid-area: 1 / 3 / span 1 / span 1;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translateY(0);
+    }
+
+    .gallery-section-bottom .flying-pizza {
+        grid-area: 2 / 1 / span 2 / span 1;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translateY(0);
+    }
+
+    .gallery-section-bottom .chicken {
+        grid-area: 2 / 3 / span 1 / span 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-2%);
+    }
+
+    .gallery-section-bottom .kebab {
+        grid-area: 3 / 3 / span 1 / span 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-28%);
+    }
+
+    .gallery-section-bottom .frittata {
+        grid-area: 3 / 2 / span 1 / span 1;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translateY(0);
+    }
+
+    /*///////////////// cards end //////////////*/
+
+
+
+
+    /***************Contact Section*******************/
+    .name-email {
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .name-email input {
+        width: 100%;
+    }
+
+
+    /****************footer section*******************/
+
+    .footer .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 95%;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .footer-first-part {
+        width: 25%;
+        order: 1;
+    }
+
+    .footer-second-part {
+        width: 45%;
+        order: 2;
+    }
+
+    .footer-third-part {
+        width: 25%;
+        order: 3;
+    }
+
+    .footer-email input {
+        width: 75%;
+    }
+
+    .footer-email button {
+        width: 25%;
+    }
+
+}
